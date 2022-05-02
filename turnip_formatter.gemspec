@@ -18,12 +18,10 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^test/})
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'turnip', '~> 3.1.0'
-  spec.add_dependency 'rspec', [">=3.3", "<4.0"]
+  spec.add_dependency 'turnip'
+  spec.add_dependency 'rspec', "~> 3.10.0"
 
-  # For ruby >= 2.1
-  spec.add_dependency 'activesupport', '>= 4.2.7', '< 7.0'
-
+  spec.add_dependency 'activesupport'
   spec.add_development_dependency 'test-unit'
   spec.add_development_dependency 'test-unit-rr'
   spec.add_development_dependency 'bundler'
